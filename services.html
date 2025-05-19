@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги типографии | Печатный Двор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div data-include="header.html">
+    </div>
+
+    <main class="services-page">
+        <section class="breadcrumbs">
+            <div class="container">
+                <a href="index.html">Главная</a> / <span>Услуги</span>
+            </div>
+        </section>
+
+        <section class="services-hero">
+            <div class="container">
+                <h1>Полиграфические услуги</h1>
+                <p class="hero-subtitle">Полный цикл производства от дизайна до доставки</p>
+            </div>
+        </section>
+
+        <section class="services-categories">
+            <div class="container">
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="digital">Цифровая печать</button>
+                    <button class="tab-btn" data-category="offset">Офсетная печать</button>
+                    <button class="tab-btn" data-category="large-format">Широкоформатная печать</button>
+                    <button class="tab-btn" data-category="postpress">Послепечатная обработка</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="services-list">
+            <div class="container">
+                <div class="service-category active" id="digital-category">
+                    <h2 class="category-title">Цифровая печать</h2>
+                    <p class="category-description">Оперативная печать малых тиражей с высоким качеством</p>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="images/photo-main.jpg" alt="Визитки">
+                                <span class="price-label">от 500 ₽</span>
+                            </div>
+                            <div class="service-content">
+                                <h3>Визитки</h3>
+                                <p>Печать визиток на мелованной, дизайнерской или пластиковой бумаге</p>
+                                <ul class="service-features">
+                                    <li>Срок: от 1 часа</li>
+                                    <li>Тираж: от 10 шт.</li>
+                                    <li>Материалы: 12 вариантов</li>
+                                </ul>
+                                <button class="main-btn" onclick="openModal()">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="images/photo-main.jpg" alt="Буклеты">
+                                <span class="price-label">от 1 200 ₽</span>
+                            </div>
+                            <div class="service-content">
+                                <h3>Буклеты</h3>
+                                <p>Печать буклетов формата А4, А5 с фальцовкой в 2 и более сгибов</p>
+                                <ul class="service-features">
+                                    <li>Срок: от 3 часов</li>
+                                    <li>Тираж: от 20 шт.</li>
+                                    <li>Плотность: 130-300 г/м²</li>
+                                </ul>
+                                <button class="main-btn" onclick="openModal()">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="images/photo-main.jpg" alt="Каталоги">
+                                <span class="price-label">от 2 500 ₽</span>
+                            </div>
+                            <div class="service-content">
+                                <h3>Каталоги</h3>
+                                <p>Печать каталогов с мягкой или твердой обложкой, скрепление на скобу или клей</p>
+                                <ul class="service-features">
+                                    <li>Срок: от 1 дня</li>
+                                    <li>Тираж: от 10 шт.</li>
+                                    <li>До 200 страниц</li>
+                                </ul>
+                                <button class="main-btn" onclick="openModal()">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category" id="offset-category">
+                    <h2 class="category-title">Офсетная печать</h2>
+                    <p class="category-description">Экономичная печать средних и крупных тиражей</p>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="images/photo-main.jpg" alt="Листовки">
+                                <span class="price-label">от 3 000 ₽</span>
+                            </div>
+                            <div class="service-content">
+                                <h3>Листовки</h3>
+                                <p>Офсетная печать листовок формата А4, А5, А6 с высокой точностью цветопередачи</p>
+                                <ul class="service-features">
+                                    <li>Срок: от 2 дней</li>
+                                    <li>Тираж: от 500 шт.</li>
+                                    <li>Цветность: 4+0 или 4+4</li>
+                                </ul>
+                                <button class="main-btn" onclick="openModal()">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="images/photo-main.jpg" alt="Брошюры">
+                                <span class="price-label">от 5 000 ₽</span>
+                            </div>
+                            <div class="service-content">
+                                <h3>Брошюры</h3>
+                                <p>Профессиональная печать брошюр с качественной послепечатной обработкой</p>
+                                <ul class="service-features">
+                                    <li>Срок: от 3 дней</li>
+                                    <li>Тираж: от 300 шт.</li>
+                                    <li>Переплет: скоба, клей, пружина</li>
+                                </ul>
+                                <button class="main-btn" onclick="openModal()">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="images/photo-main.jpg" alt="Журналы">
+                                <span class="price-label">от 8 000 ₽</span>
+                            </div>
+                            <div class="service-content">
+                                <h3>Журналы</h3>
+                                <p>Печать глянцевых и матовых журналов с различными вариантами переплета</p>
+                                <ul class="service-features">
+                                    <li>Срок: от 5 дней</li>
+                                    <li>Тираж: от 200 шт.</li>
+                                    <li>Ламинация: матовая, глянцевая</li>
+                                </ul>
+                                <button class="main-btn" onclick="openModal()">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category" id="large-format-category">
+                    <h2 class="category-title">Широкоформатная печать</h2>
+                    <p class="category-description">Печать крупных форматов для рекламы и оформления</p>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="images/photo-main.jpg" alt="Плакаты">
+                                <span class="price-label">от 800 ₽</span>
+                            </div>
+                            <div class="service-content">
+                                <h3>Плакаты</h3>
+                                <p>Печать плакатов на бумаге, самоклеющейся пленке или баннерной ткани</p>
+                                <ul class="service-features">
+                                    <li>Срок: от 3 часов</li>
+                                    <li>Формат: до 3.2м шириной</li>
+                                    <li>Разрешение: 720-1440 dpi</li>
+                                </ul>
+                                <button class="main-btn" onclick="openModal()">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="images/photo-main.jpg" alt="Баннеры">
+                                <span class="price-label">от 1 500 ₽</span>
+                            </div>
+                            <div class="service-content">
+                                <h3>Баннеры</h3>
+                                <p>Печать рекламных баннеров для уличного и интерьерного использования</p>
+                                <ul class="service-features">
+                                    <li>Срок: от 1 дня</li>
+                                    <li>Материал: баннерная ткань</li>
+                                    <li>Крепление: люверсы, карманы</li>
+                                </ul>
+                                <button class="main-btn" onclick="openModal()">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="images/photo-main.jpg" alt="Оклейка транспорта">
+                                <span class="price-label">от 15 000 ₽</span>
+                            </div>
+                            <div class="service-content">
+                                <h3>Оклейка транспорта</h3>
+                                <p>Полная или частичная оклейка автомобилей, автобусов, троллейбусов</p>
+                                <ul class="service-features">
+                                    <li>Срок: от 2 дней</li>
+                                    <li>Материал: перфорированная пленка</li>
+                                    <li>Монтаж: профессиональный</li>
+                                </ul>
+                                <button class="main-btn" onclick="openModal()">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-category" id="postpress-category">
+                    <h2 class="category-title">Послепечатная обработка</h2>
+                    <p class="category-description">Придание продукции завершенного вида</p>
+
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="images/photo-main.jpg" alt="Ламинация">
+                                <span class="price-label">от 300 ₽</span>
+                            </div>
+                            <div class="service-content">
+                                <h3>Ламинация</h3>
+                                <p>Защита печатной продукции глянцевой или матовой пленкой</p>
+                                <ul class="service-features">
+                                    <li>Срок: от 1 часа</li>
+                                    <li>Толщина: 25-250 мкм</li>
+                                    <li>Тип: горячая, холодная</li>
+                                </ul>
+                                <button class="main-btn" onclick="openModal()">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="images/photo-main.jpg" alt="Вырубка">
+                                <span class="price-label">от 500 ₽</span>
+                            </div>
+                            <div class="service-content">
+                                <h3>Вырубка</h3>
+                                <p>Придание продукции нестандартной формы с помощью штанцформ</p>
+                                <ul class="service-features">
+                                    <li>Срок: от 1 дня</li>
+                                    <li>Точность: ±0.5 мм</li>
+                                    <li>Форма: любая сложность</li>
+                                </ul>
+                                <button class="main-btn" onclick="openModal()">Подробнее</button>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-image">
+                                <img src="images/photo-main.jpg" alt="Тиснение">
+                                <span class="price-label">от 800 ₽</span>
+                            </div>
+                            <div class="service-content">
+                                <h3>Тиснение</h3>
+                                <p>Нанесение рельефного изображения фольгой или без нее</p>
+                                <ul class="service-features">
+                                    <li>Срок: от 1 дня</li>
+                                    <li>Фольга: 20+ цветов</li>
+                                    <li>Эффекты: глянец, мат, голограмма</li>
+                                </ul>
+                                <button class="main-btn" onclick="openModal()">Подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="additional-services">
+            <div class="container">
+                <h2 class="section-title">Дополнительные услуги</h2>
+                <p class="section-subtitle">Все для полного цикла производства</p>
+
+                <div class="additional-grid">
+                    <div class="additional-card">
+                        <div class="additional-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ff5c00">
+                                <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"></path>
+                            </svg>
+                        </div>
+                        <h3>Дизайн</h3>
+                        <p>Разработка макетов для печати с нуля или доработка ваших эскизов</p>
+                    </div>
+
+                    <div class="additional-card">
+                        <div class="additional-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ff5c00">
+                                <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"></path>
+                            </svg>
+                        </div>
+                        <h3>Доставка</h3>
+                        <p>Курьерская доставка по Москве и отправка в регионы транспортными компаниями</p>
+                    </div>
+
+                    <div class="additional-card">
+                        <div class="additional-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#ff5c00">
+                                <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"></path>
+                            </svg>
+                        </div>
+                        <h3>Фотосъемка</h3>
+                        <p>Профессиональная съемка продукции для каталогов и рекламных материалов</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-steps">
+            <div class="container">
+                <h2 class="section-title">Как мы работаем</h2>
+                <p class="section-subtitle">5 простых шагов к идеальному результату</p>
+
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Заявка</h3>
+                        <p>Оставляете заявку на сайте или по телефону</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Консультация</h3>
+                        <p>Наш менеджер уточняет детали заказа</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Дизайн</h3>
+                        <p>Согласовываем макет и материалы</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>Производство</h3>
+                        <p>Изготавливаем ваш заказ</p>
+                    </div>
+
+                    <div class="step-card">
+                        <div class="step-number">5</div>
+                        <h3>Доставка</h3>
+                        <p>Привозим готовую продукцию</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div data-include="callback-form.html"></div>
+    <div data-include="modal-form.html"></div>
+    <div data-include="footer.html"></div>
+
+    <script src="include.js"></script>
+
+    <script src="script.js"></script>
+    <script>
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const serviceCategories = document.querySelectorAll('.service-category');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Удаляем активный класс у всех кнопок
+                tabBtns.forEach(b => b.classList.remove('active'));
+                // Добавляем активный класс текущей кнопке
+                btn.classList.add('active');
+
+                // Скрываем все категории
+                serviceCategories.forEach(cat => cat.classList.remove('active'));
+                // Показываем выбранную категорию
+                const categoryId = btn.getAttribute('data-category') + '-category';
+                document.getElementById(categoryId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

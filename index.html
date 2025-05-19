@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Типография с доставкой</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div data-include="header.html">
+    </div>
+
+    <main class="delivery">
+        <section class="delivery-top">
+            <div class="container">
+              <h1>Типография с <span class="underline">доставкой</span></h1>
+              <p class="subtitle">Печатаем и привозим — всё под ключ</p>
+              <button class="main-btn" onclick="openModal()">Оставить заявку</button>
+            </div>
+        </section>
+
+        <section class="delivery-steps">
+            <div class="container">
+              <h2>Как работает доставка</h2>
+              <div class="steps-grid">
+                  <div class="step">
+                      <h3>01</h3>
+                      <p>Вы оформляете заказ</p>
+                    </div>
+                    <div class="step">
+                      <h3>02</h3>
+                      <p>Мы подтверждаем детали</p>
+                    </div>
+                    <div class="step">
+                      <h3>03</h3>
+                      <p>Изготавливаем продукцию</p>
+                    </div>
+                    <div class="step">
+                      <h3>04</h3>
+                      <p>Доставляем в удобное время</p>
+                    </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="delivery-benefits">
+            <div class="container">
+              <h2>Почему <span class="underline">выбирают нас</span></h2>
+              <ul class="benefits-list">
+                <li>Быстрая и точная доставка</li>
+                <li>Контроль качества на каждом этапе</li>
+                <li>Индивиндуальный подход</li>
+                <li>Гарантия сроков исполнения</li>
+                  <li>Качественная печать</li>
+                <li>Широкий спектр услуг</li>
+              </ul>
+            </div>
+        </section>
+        <section class="printing-services">
+  <div class="container">
+    <h2>Наши услуги печати в Москве</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="images/photo-main.jpg" alt="Визитки">
+        <h3>Печать визиток</h3>
+        <p>Качественные визитки с любым дизайном и покрытием.</p>
+        <button class="main-btn" onclick="openModal()">Узнать больше</button>
+      </div>
+      <div class="service-card">
+        <img src="images/photo-main.jpg" alt="Брошюры">
+        <h3>Брошюры и каталоги</h3>
+        <p>Офсетная и цифровая печать брошюр различных форматов.</p>
+        <button class="main-btn" onclick="openModal()">Узнать больше</button>
+      </div>
+      <div class="service-card">
+        <img src="images/photo-main.jpg" alt="Флаеры">
+        <h3>Флаеры и листовки</h3>
+        <p>Эффективная реклама — недорого и быстро.</p>
+        <button class="main-btn" onclick="openModal()">Узнать больше</button>
+      </div>
+      <div class="service-card">
+        <img src="images/photo-main.jpg" alt="Плакаты">
+        <h3>Плакаты</h3>
+        <p>Печатаем плакаты всех форматов с яркими цветами.</p>
+        <button class="main-btn" onclick="openModal()">Узнать больше</button>
+      </div>
+      <div class="service-card">
+        <img src="images/photo-main.jpg" alt="Наклейки">
+        <h3>Наклейки</h3>
+        <p>Самоклеящиеся этикетки, стикеры, брендирование упаковки.</p>
+        <button class="main-btn" onclick="openModal()">Узнать больше</button>
+      </div>
+      <div class="service-card">
+        <img src="images/photo-main.jpg" alt="Папки">
+        <h3>Папки с логотипом</h3>
+        <p>Представительская продукция для вашего бизнеса.</p>
+        <button class="main-btn" onclick="openModal()">Узнать больше</button>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="faq-section">
+              <h2 class="faq-title">FAQ</h2>
+              <div class="faq-container">
+                <div class="faq-item active">
+                  <div class="faq-question">
+                    <span>1</span>
+                    Оказываете ли вы услуги УФ–печати?
+                  </div>
+                  <div class="faq-answer">Да, мы предоставляем услуги УФ–печати на различных материалах.</div>
+                </div>
+
+                <div class="faq-item active">
+                  <div class="faq-question">
+                    <span>2</span>
+                    Можно ли у вас заказать офсетную печать?
+                  </div>
+                  <div class="faq-answer">Да, вы можете заказать офсетную печать на любых носителях.</div>
+                </div>
+
+                <div class="faq-item active">
+                  <div class="faq-question">
+                    <span>3</span>
+                    Изготавливаете ли вы упаковку?
+                  </div>
+                  <div class="faq-answer">Да, мы изготавливаем упаковку любой сложности.</div>
+                </div>
+              </div>
+            </section>
+
+    </main>
+
+    <div data-include="callback-form.html"></div>
+    <div data-include="modal-form.html"></div>
+    <div data-include="footer.html"></div>
+
+    <script src="include.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты типографии | Типография Москва</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div data-include="header.html">
+    </div>
+
+    <main class="contacts-page">
+        <section class="breadcrumbs">
+            <div class="container">
+                <a href="index.html">Главная</a> / <span>Контакты</span>
+            </div>
+        </section>
+
+        <section class="contacts-main">
+            <div class="container">
+                <h1 class="section-title">Наши контакты</h1>
+                <p class="section-subtitle">Мы всегда рады помочь вам с любыми вопросами</p>
+
+                <div class="contacts-grid">
+                    <div class="contacts-info">
+                        <div class="contact-block">
+                            <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Адрес</h3>
+                            <p>м.Сокольники</p>
+                        </div>
+
+                        <div class="contact-block">
+                            <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Телефоны</h3>
+                            <p>
+                                <a href="tel:+74951234567">+7 (495) 123-45-67</a><br>
+                                <a href="tel:+79998765432">+7 (999) 876-54-32</a>
+                            </p>
+                        </div>
+
+                        <div class="contact-block">
+                            <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> Email</h3>
+                            <p>
+                                <a href="mailto:info@tipografiya.ru">info@tipografiya.ru</a><br>
+                                <a href="mailto:sales@tipografiya.ru">sales@tipografiya.ru</a>
+                            </p>
+                        </div>
+
+                        <div class="contact-block">
+                            <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M8 10h8M8 14h6"></path></svg> Режим работы</h3>
+                            <p>
+                                Пн-Пт: 9:00 - 18:00<br>
+                                Сб-Вс: выходной
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contacts-map">
+                        <div id="map" style="width: 100%; height: 100%; min-height: 400px;"></div>
+                        <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш_api_ключ&lang=ru_RU" type="text/javascript"></script>
+                        <script type="text/javascript">
+                            ymaps.ready(function() {
+                                var map = new ymaps.Map("map", {
+                                    center: [55.789200, 37.679706], // Координаты вашего офиса
+                                    zoom: 16
+                                });
+
+                                var placemark = new ymaps.Placemark([55.789200, 37.679706], {
+                                    hintContent: 'Типография',
+                                    balloonContent: 'м.Сокольники'
+                                }, {
+                                    iconLayout: 'default#image',
+                                    iconImageHref: 'img/map-marker.png',
+                                    iconImageSize: [40, 40],
+                                    iconImageOffset: [-20, -40]
+                                });
+
+                                map.geoObjects.add(placemark);
+                                map.controls.remove('geolocationControl');
+                                map.controls.remove('searchControl');
+                                map.controls.remove('trafficControl');
+                                map.controls.remove('typeSelector');
+                                map.controls.remove('fullscreenControl');
+                                map.controls.remove('rulerControl');
+                                map.behaviors.disable(['scrollZoom']);
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div data-include="callback-form.html"></div>
+    <div data-include="modal-form.html"></div>
+    <div data-include="footer.html"></div>
+
+    <script src="include.js"></script>
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
